@@ -1,0 +1,20 @@
+# deps / build
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# logs / os
+*.log
+.DS_Store
+Thumbs.db
+
+# editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
