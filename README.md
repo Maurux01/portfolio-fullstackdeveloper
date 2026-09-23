@@ -25,10 +25,4 @@ npm run build    # compila a dist/
 npm run preview
 ```
 
-## Deploy en GitHub Pages
 
-1. Sube a `main` y activa **Settings → Pages → Source: GitHub Actions**.
-2. El workflow `.github/workflows/deploy.yml` compila y publica `dist/` automáticamente.
-3. URL: `https://maurux01.github.io/portfolio-fullstackdeveloper/`
-
-Tipografías: Manrope + DM Mono. Responsive: escritorio, tablet y móvil.

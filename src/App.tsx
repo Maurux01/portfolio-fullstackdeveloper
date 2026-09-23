@@ -16,7 +16,7 @@ import Reveal from "./components/Reveal.tsx";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#fafaf9] font-sans text-[#0a0a0b]">
+    <div className="min-h-screen bg-[#0a0a0b] font-sans text-[#fafaf9]">
       <Navbar />
       <main>
         <Reveal>

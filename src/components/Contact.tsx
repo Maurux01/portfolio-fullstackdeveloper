@@ -34,7 +34,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contacto" className="scroll-mt-20 border-t border-black/10 bg-[#0a0a0b] text-white">
+    <section id="contacto" className="scroll-mt-20 border-t border-white/10 bg-black/40 text-white">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2">
         <div className="reveal">
           <p className="font-mono text-sm text-[#ff6b35]">04 · contacto</p>

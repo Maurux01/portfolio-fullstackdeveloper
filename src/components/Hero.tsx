@@ -14,9 +14,9 @@ export default function Hero() {
             <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-500" />
             {profile.availability}
           </p>
-          <h1 className="reveal mt-5 text-4xl leading-[1.05] font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+          <h1 className="reveal mt-5 text-4xl leading-[1.05] font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
             {profile.name}
-            <span className="block text-lg font-semibold text-black/60 sm:text-xl">
+            <span className="block text-lg font-semibold text-white/60 sm:text-xl">
               {profile.title}
             </span>
             <span className="mt-2 block">
@@ -24,21 +24,21 @@ export default function Hero() {
               escalables<span className="animate-caret text-[#ff6b35]">▊</span>
             </span>
           </h1>
-          <p className="reveal mt-5 max-w-xl text-base leading-relaxed text-black/65 sm:text-lg">
+          <p className="reveal mt-5 max-w-xl text-base leading-relaxed text-white/65 sm:text-lg">
             {profile.bio}
           </p>
-          <p className="reveal mt-3 font-mono text-sm text-black/50">{profile.location}</p>
+          <p className="reveal mt-3 font-mono text-sm text-white/50">{profile.location}</p>
 
           <div className="reveal mt-7 flex flex-wrap gap-3">
             <a
               href="#proyectos"
-              className="rounded-full bg-[#0a0a0b] px-6 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-[#ff6b35]"
+              className="rounded-full bg-[#ff6b35] px-6 py-3 text-sm font-bold text-black transition hover:-translate-y-0.5 hover:bg-white"
             >
               Ver proyectos ↓
             </a>
             <a
               href="#contacto"
-              className="rounded-full border border-black/15 bg-white px-6 py-3 text-sm font-bold transition hover:-translate-y-0.5 hover:border-black"
+              className="rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:border-white"
             >
               Contactar
             </a>
@@ -46,7 +46,7 @@ export default function Hero() {
               href={profile.github}
               target="_blank"
               rel="noreferrer"
-              className="rounded-full px-4 py-3 font-mono text-sm text-black/60 underline-offset-4 transition hover:text-black hover:underline"
+              className="rounded-full px-4 py-3 font-mono text-sm text-white/60 underline-offset-4 transition hover:text-white hover:underline"
             >
               ↗ GitHub
             </a>
@@ -56,7 +56,7 @@ export default function Hero() {
             {["React", "TypeScript", "Spring Boot", "Django", "PostgreSQL", "Neovim"].map((t) => (
               <span
                 key={t}
-                className="rounded-full border border-black/10 bg-white px-3 py-1.5 text-black/70"
+                className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-white/70"
               >
                 {t}
               </span>
@@ -65,7 +65,7 @@ export default function Hero() {
         </div>
 
         {/* Terminal visual */}
-        <div className="reveal animate-float h-fit overflow-hidden rounded-2xl border border-black/10 bg-[#0a0a0b] text-left shadow-2xl">
+        <div className="reveal animate-float h-fit overflow-hidden rounded-2xl border border-white/10 bg-black text-left shadow-2xl">
           <div className="flex items-center gap-1.5 border-b border-white/10 px-4 py-3">
             <span className="h-3 w-3 rounded-full bg-red-400" />
             <span className="h-3 w-3 rounded-full bg-yellow-400" />

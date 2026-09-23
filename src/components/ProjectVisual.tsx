@@ -32,10 +32,10 @@ export default function ProjectVisual({ project }: { project: Project }) {
   }
   if (project.kind === "jobs") {
     return (
-      <div className="rounded-xl border border-black/10 bg-white p-4">
+      <div className="rounded-xl border border-white/10 bg-black p-4 text-white">
         <div className="flex items-center justify-between">
           <p className="font-extrabold">Workapp</p>
-          <span className="rounded-full bg-emerald-100 px-2 py-1 font-mono text-[11px] text-emerald-700">
+          <span className="rounded-full bg-emerald-400/15 px-2 py-1 font-mono text-[11px] text-emerald-300">
             ES|EN 🌙
           </span>
         </div>
@@ -47,10 +47,10 @@ export default function ProjectVisual({ project }: { project: Project }) {
           ].map(([a, b]) => (
             <div
               key={a}
-              className="flex items-center justify-between rounded-lg border border-black/10 px-3 py-2 text-sm"
+              className="flex items-center justify-between rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-sm"
             >
               <span className="font-semibold">{a}</span>
-              <span className="font-mono text-xs text-black/60">{b}</span>
+              <span className="font-mono text-xs text-white/60">{b}</span>
             </div>
           ))}
         </div>
@@ -59,10 +59,10 @@ export default function ProjectVisual({ project }: { project: Project }) {
   }
   if (project.kind === "cars") {
     return (
-      <div className="rounded-xl border border-black/10 bg-gradient-to-br from-sky-50 to-white p-4">
+      <div className="rounded-xl border border-white/10 bg-gradient-to-br from-sky-950 to-black p-4 text-white">
         <div className="flex items-center justify-between">
           <p className="font-extrabold">AutoSales</p>
-          <span className="rounded-full bg-sky-100 px-2 py-1 font-mono text-[11px] text-sky-700">
+          <span className="rounded-full bg-sky-400/15 px-2 py-1 font-mono text-[11px] text-sky-300">
             12 autos
           </span>
         </div>
@@ -73,13 +73,13 @@ export default function ProjectVisual({ project }: { project: Project }) {
             ["Toyota Corolla · 2021", "$16,400"],
             ["+ 9 más →", "filtros"],
           ].map(([a, b]) => (
-            <div key={a} className="rounded-lg border border-black/10 bg-white p-3">
+            <div key={a} className="rounded-lg border border-white/10 bg-white/5 p-3">
               <p className="text-xs font-bold">{a}</p>
-              <p className="font-mono text-xs text-black/60">{b}</p>
+              <p className="font-mono text-xs text-white/60">{b}</p>
             </div>
           ))}
         </div>
-        <div className="mt-3 rounded-lg bg-[#0a0a0b] p-3 font-mono text-xs text-white">
+        <div className="mt-3 rounded-lg bg-[#ff6b35]/15 p-3 font-mono text-xs text-white">
           cuota mensual ≈ <span className="text-emerald-300">$342/mes</span>
         </div>
       </div>
