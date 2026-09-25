@@ -2,15 +2,15 @@ import { services } from "../data/portfolio.ts";
 
 export default function Services() {
   return (
-    <section id="servicios" className="scroll-mt-20 border-y border-white/10 bg-black/40">
+    <section id="services" className="scroll-mt-20 border-y border-white/10 bg-black/40">
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-        <p className="reveal font-mono text-sm text-[#ff6b35]">02 · servicios</p>
+        <p className="reveal font-mono text-sm text-[#ff6b35]">02 · services</p>
         <h2 className="reveal mt-2 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-          De la idea al deploy
+          From idea to deploy
         </h2>
         <p className="reveal mt-3 max-w-2xl text-white/65">
-          Trabajo por capas separadas y reutilizables: si ya tienes diseño hago el frontend, si
-          necesitas datos hago el backend, o te entrego el producto completo.
+          I work in separate, reusable layers: if you already have a design I build the
+          frontend, if you need data I build the backend, or I deliver the full product.
         </p>
         <div className="mt-8 grid gap-5 md:grid-cols-3">
           {services.map((s) => (

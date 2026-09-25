@@ -1,9 +1,9 @@
 // ─────────────────────────────────────────────
-// Portfolio Fullstack — Mauro Infante (maurux01)
-// Personaliza nombre, experiencia, proyectos, correo
-// y perfiles en src/data/portfolio.ts
-// Arquitectura escalable: cada sección es un componente
-// en src/components/* alimentado por datos reutilizables.
+// Fullstack Portfolio — Mauro Infante (maurux01)
+// Customize name, experience, projects, email
+// and profiles in src/data/portfolio.ts
+// Scalable architecture: each section is a component
+// in src/components/* fed by reusable data.
 // ─────────────────────────────────────────────
 import Navbar from "./components/Navbar.tsx";
 import Hero from "./components/Hero.tsx";

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
-// Añade .is-visible cuando el elemento entra al viewport.
-// Úsalo con className="reveal".
+// Adds .is-visible when the element enters the viewport.
+// Use it with className="reveal".
 export default function Reveal({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const els = document.querySelectorAll(".reveal:not(.is-visible)");

@@ -12,11 +12,11 @@ export default function Contact() {
 
   function validate(): Errors {
     const e: Errors = {};
-    if (name.trim().length < 2) e.name = "Escribe tu nombre (mín. 2 caracteres).";
+    if (name.trim().length < 2) e.name = "Please enter your name (min. 2 characters).";
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim()))
-      e.email = "Escribe un email válido.";
+      e.email = "Please enter a valid email.";
     if (message.trim().length < 10)
-      e.message = "Cuéntame un poco más (mín. 10 caracteres).";
+      e.message = "Tell me a bit more (min. 10 characters).";
     return e;
   }
 
@@ -25,25 +25,25 @@ export default function Contact() {
     const e = validate();
     setErrors(e);
     if (Object.keys(e).length > 0) return;
-    // Sin backend: abrimos el cliente de correo con el mensaje pre-llenado.
-    // Para producción conéctalo a Formspree / Resend / tu API.
-    const subject = encodeURIComponent(`Portfolio: contacto de ${name}`);
+    // No backend: open the mail client with a pre-filled message.
+    // For production, connect it to Formspree / Resend / your API.
+    const subject = encodeURIComponent(`Portfolio: contact from ${name}`);
     const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
     window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`;
     setSent(true);
   }
 
   return (
-    <section id="contacto" className="scroll-mt-20 border-t border-white/10 bg-black/40 text-white">
+    <section id="contact" className="scroll-mt-20 border-t border-white/10 bg-black/40 text-white">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2">
         <div className="reveal">
-          <p className="font-mono text-sm text-[#ff6b35]">04 · contacto</p>
+          <p className="font-mono text-sm text-[#ff6b35]">04 · contact</p>
           <h2 className="mt-2 text-3xl font-extrabold tracking-tight sm:text-4xl">
-            ¿Hacemos algo juntos?
+            Shall we build something together?
           </h2>
           <p className="mt-3 text-white/65">
-            Respondo en menos de 24h. Escríbeme para freelance, rol Jr o colaborar en open
-            source.
+            I reply within 24h. Message me for freelance work, a Jr role, or to collaborate on
+            open source.
           </p>
           <div className="mt-6 space-y-3">
             <a
@@ -83,16 +83,16 @@ export default function Contact() {
         >
           {sent && (
             <p className="mb-4 rounded-xl bg-emerald-50 px-4 py-3 text-sm font-semibold text-emerald-700">
-              ✓ Gracias {name.split(" ")[0] || "por tu mensaje"}. Se abrió tu cliente de
-              correo — si prefieres, escríbeme directo a {profile.email}.
+              ✓ Thanks {name.split(" ")[0] || "for your message"}. Your mail client was
+              opened — or write to me directly at {profile.email}.
             </p>
           )}
           <label className="block text-sm font-bold">
-            Nombre
+            Name
             <input
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="Tu nombre"
+              placeholder="Your name"
               className="mt-1.5 w-full rounded-xl border border-black/15 px-4 py-3 font-normal outline-none focus:border-[#ff6b35]"
             />
             {errors.name && (
@@ -104,7 +104,7 @@ export default function Contact() {
             <input
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="tu@email.com"
+              placeholder="you@email.com"
               type="email"
               className="mt-1.5 w-full rounded-xl border border-black/15 px-4 py-3 font-normal outline-none focus:border-[#ff6b35]"
             />
@@ -113,11 +113,11 @@ export default function Contact() {
             )}
           </label>
           <label className="mt-4 block text-sm font-bold">
-            ¿Cómo puedo ayudarte?
+            How can I help you?
             <textarea
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              placeholder="Quiero una landing para… / Busco un Jr fullstack que…"
+              placeholder="I need a landing page for… / I'm looking for a Jr fullstack who…"
               rows={4}
               className="mt-1.5 w-full resize-none rounded-xl border border-black/15 px-4 py-3 font-normal outline-none focus:border-[#ff6b35]"
             />
@@ -131,10 +131,10 @@ export default function Contact() {
             type="submit"
             className="mt-5 w-full rounded-full bg-[#0a0a0b] py-3.5 text-sm font-bold text-white transition hover:bg-[#ff6b35]"
           >
-            Enviar mensaje →
+            Send message →
           </button>
           <p className="mt-3 text-center font-mono text-[11px] text-black/45">
-            validación local · sin spam · via mailto (conectable a Formspree/API)
+            local validation · no spam · via mailto (connectable to Formspree/API)
           </p>
         </form>
       </div>

@@ -1,20 +1,20 @@
 // ─────────────────────────────────────────────
-// Personaliza aquí: nombre, experiencia, proyectos,
-// correo y perfiles sociales. Todo el sitio lee de este archivo.
+// Customize here: name, experience, projects,
+// email and social profiles. The whole site reads from this file.
 // ─────────────────────────────────────────────
 
 export const profile = {
   name: "Mauro Infante",
   handle: "maurux01",
   role: "Jr Fullstack Developer",
-  title: "Ingeniero Industrial → Fullstack Developer",
-  location: "Colombia · Remoto / Bilingüe ES–EN",
-  availability: "Disponible para proyectos freelance y roles Jr",
+  title: "Industrial Engineer → Fullstack Developer",
+  location: "Colombia · Remote / Bilingual ES–EN",
+  availability: "Available for freelance projects and Jr roles",
   email: "1w6zu7edc@mozmail.com",
   github: "https://github.com/Maurux01",
   linkedin: "https://www.linkedin.com/in/mauro-infante",
   oldPortfolio: "https://maurux01.github.io/personalwebpage/",
-  bio: "Empecé en entornos BPO y 4+ años de customer service remoto bilingüe. Hoy construyo software: combino la mentalidad analítica de la Ingeniería Industrial con la creatividad del desarrollo. Usuario de Arch Linux, amante del open source, terminal/TUI y team Neovim.",
+  bio: "I started in BPO environments with 4+ years of bilingual remote customer service. Today I build software: I combine the analytical mindset of Industrial Engineering with the creativity of development. Arch Linux user, open source lover, terminal/TUI fan and team Neovim.",
 };
 
 export type Project = {
@@ -33,90 +33,90 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "omninvim",
-    title: "OmniNvim — IDE Fullstack en la terminal",
-    tagline: "Neovim 0.11+ · Lazy.nvim · 25 temas dark",
+    title: "OmniNvim — Fullstack IDE in the terminal",
+    tagline: "Neovim 0.11+ · Lazy.nvim · 25 dark themes",
     description:
-      "Configuración kickstart-based que convierte Neovim en un IDE fullstack real: LSP para TypeScript, Tailwind, Python, Java, Lua y Bash, formateo al guardar, Telescope + Harpoon + Flash, Gitsigns y live server para web dev.",
+      "Kickstart-based setup that turns Neovim into a real fullstack IDE: LSP for TypeScript, Tailwind, Python, Java, Lua and Bash, format on save, Telescope + Harpoon + Flash, Gitsigns and live server for web dev.",
     stack: ["Lua", "Neovim", "TypeScript", "Tailwind", "Python", "Java"],
     live: "https://maurux01.github.io/omninvim/#top",
     repo: "https://github.com/Maurux01/omninvim",
     kind: "terminal",
     accent: "#ff6b35",
     stats: [
-      { value: "25", label: "temas dark" },
+      { value: "25", label: "dark themes" },
       { value: "8+", label: "LSP servers" },
       { value: "100%", label: "keyboard" },
     ],
   },
   {
     slug: "workapp",
-    title: "Workapp — Conseguir trabajo, inteligente",
-    tagline: "Job board ES/EN · resultados + dark mode",
+    title: "Workapp — Smarter job hunting",
+    tagline: "ES/EN job board · results + dark mode",
     description:
-      "Web app bilingüe para buscar trabajo de forma inteligente: inicio, vista de resultados, toggle ES/EN y modo oscuro. Enfocada en UX simple y rápida para candidatos.",
+      "Bilingual web app for smarter job searching: home, results view, ES/EN toggle and dark mode. Focused on a simple, fast UX for candidates.",
     stack: ["JavaScript", "HTML", "CSS", "GitHub Pages"],
     live: "https://maurux01.github.io/workapp/",
     repo: "https://github.com/Maurux01/workapp",
     kind: "jobs",
     accent: "#10b981",
     stats: [
-      { value: "ES/EN", label: "bilingüe" },
+      { value: "ES/EN", label: "bilingual" },
       { value: "🌙", label: "dark mode" },
-      { value: "⚡", label: "rápida" },
+      { value: "⚡", label: "fast" },
     ],
   },
   {
     slug: "musik-landing",
-    title: "Musi-k — Landing The Odin Project",
+    title: "Musi-k — The Odin Project Landing",
     tagline: "Landing page · HTML + CSS · responsive",
     description:
-      "Landing page creada como práctica de The Odin Project: hero con propuesta de valor, secciones de fiesta/eventos, cita destacada, call-to-action y footer. Base sólida de maquetación responsive.",
+      "Landing page built as a The Odin Project exercise: hero with value proposition, party/event sections, featured quote, call-to-action and footer. A solid responsive layout foundation.",
     stack: ["HTML", "CSS", "Responsive"],
     live: "https://maurux01.github.io/landing-page-theodinproject/",
     repo: "https://github.com/Maurux01/landing-page-theodinproject",
     kind: "music",
     accent: "#8b5cf6",
     stats: [
-      { value: "5", label: "secciones" },
+      { value: "5", label: "sections" },
       { value: "100%", label: "responsive" },
       { value: "0", label: "frameworks" },
     ],
   },
   {
     slug: "autosales",
-    title: "AutoSales — Concesionario escalable",
-    tagline: "Catálogo filtrable · calculadora · dark mode",
+    title: "AutoSales — Scalable dealership",
+    tagline: "Filterable catalog · calculator · dark mode",
     description:
-      "Landing escalable para concesionario en HTML, CSS y JS vanilla: catálogo de 12 autos con filtros, calculadora de financiación con sliders, modo oscuro y arquitectura sin frameworks lista para crecer.",
+      "Scalable landing page for a car dealership in HTML, CSS and vanilla JS: 12-car catalog with filters, financing calculator with sliders, dark mode and a framework-free architecture ready to grow.",
     stack: ["JavaScript", "HTML", "CSS", "Vanilla JS"],
     live: "https://maurux01.github.io/Autosales/",
     repo: "https://github.com/Maurux01/Autosales",
     kind: "cars",
     accent: "#0ea5e9",
     stats: [
-      { value: "12", label: "autos" },
-      { value: "24h", label: "aprobación" },
-      { value: "4.9★", label: "satisfacción" },
+      { value: "12", label: "cars" },
+      { value: "24h", label: "approval" },
+      { value: "4.9★", label: "satisfaction" },
     ],
   },
 ];
 
 export const services = [
   {
-    title: "Producto / Landing pages",
-    desc: "Landing pages rápidas, responsive y orientadas a conversión: hero claro, catálogo, pricing, FAQ y contacto.",
-    points: ["Responsive mobile-first", "SEO básico + performance", "Github Pages / deploy"],
+    title: "Product / Landing pages",
+    desc: "Fast, responsive, conversion-oriented landing pages: clear hero, catalog, pricing, FAQ and contact.",
+    points: ["Mobile-first responsive", "Basic SEO + performance", "GitHub Pages / deploy"],
     icon: "◈",
   },
   {
     title: "Frontend",
-    desc: "Interfaces modernas con React, Angular, TypeScript y Tailwind. Componentes reutilizables y escalables.",
+    desc: "Modern interfaces with React, Angular, TypeScript and Tailwind. Reusable, scalable components.",
     points: ["React · Angular · TS", "Tailwind CSS v4", "Neovim workflow"],
     icon: "▣",
   },
   {
     title: "Backend & Data",
-    desc: "APIs y datos con Java Spring Boot, Python Django/Flask, PostgreSQL y MongoDB. Análisis con Pandas + Streamlit.",
+    desc: "APIs and data with Java Spring Boot, Python Django/Flask, PostgreSQL and MongoDB. Analysis with Pandas + Streamlit.",
     points: ["Spring Boot · Django/Flask", "PostgreSQL · MongoDB", "Data analysis"],
     icon: "⬢",
   },
@@ -142,8 +142,8 @@ export const stackGroups = [
 ];
 
 export const navLinks = [
-  { href: "#proyectos", label: "Proyectos" },
-  { href: "#servicios", label: "Servicios" },
-  { href: "#sobre-mi", label: "Sobre mí" },
-  { href: "#contacto", label: "Contacto" },
+  { href: "#projects", label: "Projects" },
+  { href: "#services", label: "Services" },
+  { href: "#about", label: "About" },
+  { href: "#contact", label: "Contact" },
 ];

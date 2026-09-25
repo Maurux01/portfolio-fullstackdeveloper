@@ -1,28 +1,26 @@
 # portfolio-fullstackdeveloper
 
-Landing page portfolio fullstack de **Mauro Infante ([@maurux01](https://github.com/Maurux01))** — Ingeniero Industrial → Jr Fullstack Developer. React + Vite + Tailwind CSS v4.
+Fullstack portfolio landing page of **Mauro Infante ([@maurux01](https://github.com/Maurux01))** — Industrial Engineer → Jr Fullstack Developer. React + Vite + Tailwind CSS v4.
 
-## Secciones
+## Sections
 
-- Hero con propuesta de valor + disponibilidad + terminal animada
-- Navegación responsive con menú móvil
-- Proyectos con datos reutilizables: OmniNvim, Workapp, Musi-k, AutoSales
-- Servicios: producto, frontend, backend & data
-- Sobre mí: experiencia + stack (React, Angular, TS, Spring Boot, Django, PostgreSQL…)
-- Contacto funcional con validación (mailto, conectable a Formspree/API)
-- Footer con email, GitHub y LinkedIn
+- Hero with value proposition + availability + animated terminal
+- Responsive navigation with mobile menu
+- Projects with reusable data: OmniNvim, Workapp, Musi-k, AutoSales
+- Services: product, frontend, backend & data
+- About me: experience + stack (React, Angular, TS, Spring Boot, Django, PostgreSQL…)
+- Working contact form with validation (mailto, connectable to Formspree/API)
+- Footer with email, GitHub and LinkedIn
 
-## Personalizar
+## Customize
 
-Edita `src/data/portfolio.ts`: nombre, bio, proyectos, correo y perfiles. Todo el sitio lee de ahí.
+Edit `src/data/portfolio.ts`: name, bio, projects, email and profiles. The whole site reads from there.
 
-## Desarrollo
+## Development
 
 ```bash
 npm install
 npm run dev      # http://localhost:5173
-npm run build    # compila a dist/
+npm run build    # builds to dist/
 npm run preview
 ```
-
-

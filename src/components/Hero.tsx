@@ -20,8 +20,8 @@ export default function Hero() {
               {profile.title}
             </span>
             <span className="mt-2 block">
-              Construyo webs <span className="text-[#ff6b35]">rápidas</span>, funcionales y
-              escalables<span className="animate-caret text-[#ff6b35]">▊</span>
+              I build <span className="text-[#ff6b35]">fast</span>, functional and scalable
+              websites<span className="animate-caret text-[#ff6b35]">▊</span>
             </span>
           </h1>
           <p className="reveal mt-5 max-w-xl text-base leading-relaxed text-white/65 sm:text-lg">
@@ -31,16 +31,16 @@ export default function Hero() {
 
           <div className="reveal mt-7 flex flex-wrap gap-3">
             <a
-              href="#proyectos"
+              href="#projects"
               className="rounded-full bg-[#ff6b35] px-6 py-3 text-sm font-bold text-black transition hover:-translate-y-0.5 hover:bg-white"
             >
-              Ver proyectos ↓
+              View projects ↓
             </a>
             <a
-              href="#contacto"
+              href="#contact"
               className="rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:border-white"
             >
-              Contactar
+              Contact
             </a>
             <a
               href={profile.github}
@@ -64,7 +64,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Terminal visual */}
+        {/* Visual terminal */}
         <div className="reveal animate-float h-fit overflow-hidden rounded-2xl border border-white/10 bg-black text-left shadow-2xl">
           <div className="flex items-center gap-1.5 border-b border-white/10 px-4 py-3">
             <span className="h-3 w-3 rounded-full bg-red-400" />
@@ -73,7 +73,7 @@ export default function Hero() {
             <span className="ml-2 font-mono text-xs text-white/50">mauro@arch: ~/portfolio</span>
           </div>
           <div className="space-y-2 p-5 font-mono text-[13px] leading-relaxed">
-            <p className="text-white/40"># quién soy</p>
+            <p className="text-white/40"># who I am</p>
             <p>
               <span className="text-emerald-400">$</span>{" "}
               <span className="text-white">whoami --fullstack</span>

@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="border-t border-white/10 bg-[#0a0a0b] pb-10 text-white">
       <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 sm:flex-row sm:items-center sm:justify-between sm:px-6">
         <p className="font-mono text-sm text-white/60">
-          © 2026 {profile.name} — @{profile.handle} · hecho con React + Tailwind + Neovim
+          © 2026 {profile.name} — @{profile.handle} · built with React + Tailwind + Neovim
         </p>
         <div className="flex gap-5 font-mono text-sm">
           <a href={`mailto:${profile.email}`} className="hover:text-[#ff6b35]">

@@ -2,26 +2,26 @@ import { profile, stackGroups } from "../data/portfolio.ts";
 
 export default function About() {
   return (
-    <section id="sobre-mi" className="mx-auto max-w-6xl scroll-mt-20 px-4 py-14 sm:px-6">
-      <p className="reveal font-mono text-sm text-[#ff6b35]">03 · sobre mí</p>
+    <section id="about" className="mx-auto max-w-6xl scroll-mt-20 px-4 py-14 sm:px-6">
+      <p className="reveal font-mono text-sm text-[#ff6b35]">03 · about me</p>
       <div className="mt-2 grid gap-10 md:grid-cols-[1fr_1.2fr]">
         <div className="reveal">
           <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-            Ingeniero que construye software
+            Engineer who builds software
           </h2>
           <p className="mt-4 leading-relaxed text-white/65">{profile.bio}</p>
           <div className="mt-5 space-y-2 font-mono text-sm text-white/80">
             <p>
-              <span className="text-white/40">nombre:</span> {profile.name} ({profile.handle})
+              <span className="text-white/40">name:</span> {profile.name} ({profile.handle})
             </p>
             <p>
-              <span className="text-white/40">ubicación:</span> {profile.location}
+              <span className="text-white/40">location:</span> {profile.location}
             </p>
             <p>
-              <span className="text-white/40">idiomas:</span> Bilingüe ES / EN — 4+ años remoto
+              <span className="text-white/40">languages:</span> Bilingual ES / EN — 4+ years remote
             </p>
             <p>
-              <span className="text-white/40">foco:</span> open source · terminal · TUI · neovim
+              <span className="text-white/40">focus:</span> open source · terminal · TUI · neovim
             </p>
           </div>
           <div className="mt-5 flex flex-wrap gap-3">
@@ -39,7 +39,7 @@ export default function About() {
               rel="noreferrer"
               className="rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-bold text-white transition hover:border-white"
             >
-              Portfolio anterior
+              Previous portfolio
             </a>
           </div>
         </div>

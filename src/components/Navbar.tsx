@@ -28,17 +28,17 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#contacto"
+            href="#contact"
             className="ml-2 rounded-full bg-[#ff6b35] px-5 py-2.5 text-sm font-bold text-black transition hover:bg-white"
           >
-            Contrátame
+            Hire me
           </a>
         </div>
 
         <button
           className="grid h-10 w-10 place-items-center rounded-lg border border-white/15 text-white md:hidden"
           onClick={() => setOpen(!open)}
-          aria-label="Abrir menú"
+          aria-label="Open menu"
         >
           {open ? "✕" : "☰"}
         </button>
@@ -57,11 +57,11 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#contacto"
+            href="#contact"
             onClick={() => setOpen(false)}
             className="mt-2 block rounded-xl bg-[#ff6b35] px-3 py-3 text-center font-bold text-black"
           >
-            Contrátame
+            Hire me
           </a>
         </div>
       )}

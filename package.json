@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Landing page portfolio fullstack — Mauro Infante (maurux01). React + Vite + Tailwind CSS v4.",
+  "description": "Fullstack portfolio landing page — Mauro Infante (maurux01). React + Vite + Tailwind CSS v4.",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

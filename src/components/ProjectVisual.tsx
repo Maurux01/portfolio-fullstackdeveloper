@@ -1,8 +1,8 @@
 import { useState } from "react";
 import type { Project } from "../data/portfolio.ts";
 
-// Fotos reales en public/images/ (omninvim.png, workapp.png, musik.png, autosales.png)
-// con respaldo CSS si la imagen aún no existe.
+// Real photos in public/images/ (omninvim.png, workapp.png, musik.png, autosales.png)
+// with a CSS fallback if the image does not exist yet.
 function Shot({
   file,
   alt,
@@ -35,7 +35,7 @@ export default function ProjectVisual({ project }: { project: Project }) {
     return (
       <Shot
         file="omninvim.png"
-        alt="Captura de OmniNvim — IDE fullstack en la terminal"
+        alt="OmniNvim screenshot — fullstack IDE in the terminal"
         fallback={
           <div className="text-left font-mono text-[12px]">
             <div className="flex items-center justify-between border-b border-white/10 px-3 py-2 text-white/40">
@@ -56,7 +56,7 @@ export default function ProjectVisual({ project }: { project: Project }) {
                 <span className="text-amber-300">"tailwind"</span>&gt;
               </p>
               <div className="flex gap-2 pt-2">
-                <span className="rounded bg-white/10 px-2 py-1 text-white/70">25 temas</span>
+                <span className="rounded bg-white/10 px-2 py-1 text-white/70">25 themes</span>
                 <span className="rounded bg-[#ff6b35]/20 px-2 py-1 text-[#ff6b35]">LSP ●</span>
               </div>
             </div>
@@ -69,7 +69,7 @@ export default function ProjectVisual({ project }: { project: Project }) {
     return (
       <Shot
         file="workapp.png"
-        alt="Captura de Workapp — buscador de empleo bilingüe"
+        alt="Workapp screenshot — bilingual job finder"
         fallback={
           <div className="bg-black p-4 text-left text-white">
             <div className="flex items-center justify-between">
@@ -80,9 +80,9 @@ export default function ProjectVisual({ project }: { project: Project }) {
             </div>
             <div className="mt-3 space-y-2">
               {[
-                ["Frontend Jr · Remoto", "$800–$1.2k"],
-                ["Backend Python · Híbrido", "$1k–$1.5k"],
-                ["Fullstack · Freelance", "por proyecto"],
+                ["Jr Frontend · Remote", "$800–$1.2k"],
+                ["Python Backend · Hybrid", "$1k–$1.5k"],
+                ["Fullstack · Freelance", "per project"],
               ].map(([a, b]) => (
                 <div
                   key={a}
@@ -102,13 +102,13 @@ export default function ProjectVisual({ project }: { project: Project }) {
     return (
       <Shot
         file="autosales.png"
-        alt="Captura de AutoSales — concesionario con catálogo y financiación"
+        alt="AutoSales screenshot — dealership with catalog and financing"
         fallback={
           <div className="bg-gradient-to-br from-sky-950 to-black p-4 text-left text-white">
             <div className="flex items-center justify-between">
               <p className="font-extrabold">AutoSales</p>
               <span className="rounded-full bg-sky-400/15 px-2 py-1 font-mono text-[11px] text-sky-300">
-                12 autos
+                12 cars
               </span>
             </div>
             <div className="mt-3 grid grid-cols-2 gap-2">
@@ -116,7 +116,7 @@ export default function ProjectVisual({ project }: { project: Project }) {
                 ["Porsche 911 · 2020", "$98,500"],
                 ["Mazda 3 · 2022", "$18,900"],
                 ["Toyota Corolla · 2021", "$16,400"],
-                ["+ 9 más →", "filtros"],
+                ["+ 9 more →", "filters"],
               ].map(([a, b]) => (
                 <div key={a} className="rounded-lg border border-white/10 bg-white/5 p-3">
                   <p className="text-xs font-bold">{a}</p>
@@ -125,7 +125,7 @@ export default function ProjectVisual({ project }: { project: Project }) {
               ))}
             </div>
             <div className="mt-3 rounded-lg bg-[#ff6b35]/15 p-3 font-mono text-xs text-white">
-              cuota mensual ≈ <span className="text-emerald-300">$342/mes</span>
+              monthly payment ≈ <span className="text-emerald-300">$342/mo</span>
             </div>
           </div>
         }
@@ -136,7 +136,7 @@ export default function ProjectVisual({ project }: { project: Project }) {
   return (
     <Shot
       file="musik.png"
-      alt="Captura de Musi-k — landing page sobre la música"
+      alt="Musi-k screenshot — landing page about music"
       fallback={
         <div className="bg-gradient-to-br from-violet-600 via-fuchsia-500 to-orange-400 p-5 text-left text-white">
           <p className="font-mono text-xs opacity-80">Musi-k · the odin project</p>

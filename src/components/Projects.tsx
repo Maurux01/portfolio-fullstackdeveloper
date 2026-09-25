@@ -3,11 +3,11 @@ import ProjectVisual from "./ProjectVisual.tsx";
 
 export default function Projects() {
   return (
-    <section id="proyectos" className="mx-auto max-w-6xl scroll-mt-20 px-4 py-14 sm:px-6">
-      <p className="reveal font-mono text-sm text-[#ff6b35]">01 · proyectos reales</p>
+    <section id="projects" className="mx-auto max-w-6xl scroll-mt-20 px-4 py-14 sm:px-6">
+      <p className="reveal font-mono text-sm text-[#ff6b35]">01 · real projects</p>
       <div className="reveal mt-2 flex flex-wrap items-end justify-between gap-4">
         <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-          Lo que ya está en producción
+          What is already live in production
         </h2>
         <a
           href="https://github.com/Maurux01?tab=repositories"
@@ -15,7 +15,7 @@ export default function Projects() {
           rel="noreferrer"
           className="font-mono text-sm text-white/60 underline-offset-4 hover:text-white hover:underline"
         >
-          ↗ ver 20+ repos
+          ↗ view 20+ repos
         </a>
       </div>
 
